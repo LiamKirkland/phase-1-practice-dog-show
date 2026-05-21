@@ -1,3 +1,7 @@
+body {
+  background-color: #f4f7fb;
+}
+
 .main {
   height: 100vh;
   font-family: 'Open Sans', sans-serif;
@@ -14,8 +18,26 @@ h1, h2, h3, h4 {
   margin-bottom: 0px;
 }
 
+h1 {
+  font-size: 2.5rem;
+  color: #1a1a2e;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+h4 {
+  color: #333;
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
 th {
   font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+td {
+  padding: 8px 14px;
+  text-align: center;
 }
 
 .center {
@@ -31,7 +53,8 @@ th {
 }
 
 .blue {
-  background-color: #66c2ff;
+  background-color: #4aa8e8;
+  color: white;
 }
 
 .yellow {
@@ -45,5 +68,67 @@ th {
 .border-grey {
   border-style: solid;
   border-width: 1px;
-  border-color: grey;
+  border-color: #ccc;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Form inputs */
+#dog-form input[type="text"] {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 6px 10px;
+  margin: 4px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+#dog-form input[type="text"]:focus {
+  border-color: #4aa8e8;
+}
+
+#dog-form input[type="submit"] {
+  background-color: #4aa8e8;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 7px 16px;
+  margin: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#dog-form input[type="submit"]:hover {
+  background-color: #2e8ecf;
+}
+
+/* Table */
+table {
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+tbody tr:nth-child(even) {
+  background-color: #eaf4fd;
+}
+
+tbody tr:hover {
+  background-color: #d6ecfa;
+  transition: background-color 0.15s;
+}
+
+/* Edit button (if using a <button> inside td) */
+button {
+  background-color: #4aa8e8;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #2e8ecf;
 }
